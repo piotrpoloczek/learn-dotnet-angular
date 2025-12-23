@@ -7,4 +7,6 @@ public class AppUser
 
     public required string Email { get; set; }
 
+    public required byte[] PaswordHash { get; set; }
+    public required byte[] PasswordSalt { get; set; }
 }
