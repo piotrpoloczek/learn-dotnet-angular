@@ -57,3 +57,38 @@ nunit-*.xml
 *.db
 *.db-shm
 *.db-wal
+
+
+# --- Entity Framework / migrations tooling (keep Migrations/*.cs!) ---
+
+# EF Core bundles (if you ever use: dotnet ef migrations bundle)
+efbundle
+efbundle.exe
+
+# SQLite / local database sidecars (extra files created by tools/app)
+*.db-journal
+*.db-*          # e.g. dating.db-x-Users-3-PasswordSalt.bin
+*.bin           # generic binary scratch files
+
+# Local config / secrets
+appsettings.*.json
+!appsettings.json
+!appsettings.Development.json   # <-- keep this ONLY if you intentionally want it in git
+secrets.json
+**/Properties/launchSettings.json
+
+# User-specific / OS junk
+.DS_Store
+Thumbs.db
+
+# Rider / VS / VS Code
+.idea/
+.vs/
+.vscode/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Logs
+*.log
