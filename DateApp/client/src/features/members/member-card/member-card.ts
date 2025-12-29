@@ -11,5 +11,4 @@ import { AgePipe } from '../../../core/pipes/age-pipe';
 })
 export class MemberCard {
   member = input.required<Member>();
-
 }
