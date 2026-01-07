@@ -4,10 +4,11 @@ import { RegisterCreds } from '../../../types/user';
 import { AccountService } from '../../../core/services/account-service';
 import { TextInput } from "../../../shared/text-input/text-input";
 import { Router } from '@angular/router';
+import { JsonPipe } from '@angular/common';
 
 @Component({
   selector: 'app-register',
-  imports: [ReactiveFormsModule, TextInput],
+  imports: [ReactiveFormsModule, TextInput, JsonPipe],
   templateUrl: './register.html',
   styleUrl: './register.css',
 })
